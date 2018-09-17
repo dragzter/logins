@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login System</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
@@ -17,6 +18,12 @@
             <div class="main-wrapper">
                 <ul>
                     <li><a href="index.php">Home</a></li>
+                    <?php 
+                        if (isset($_SESSION['u_id'])) {
+                            echo '<li><a href="account.php">Account</a></li>';
+                            echo '<li><a href="dataEntry.php">Data Entry</a></li>';
+                        }
+                    ?>
                 </ul>
                 <div class="nav-login">
                     <?php 
