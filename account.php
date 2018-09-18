@@ -10,7 +10,7 @@
                 <p>Font Size</p>
                 <div class="slidecontainer">
                     <input type="range" min="8" max="24" value="50" class="slider" id="myRange">
-                    <input type="color" value="50" name="color" value="#333" id="myColor">
+                    <input type="color" value="50" name="color" value="#222" id="myColor">
                 </div>
             </form>
         </div>
