@@ -1,5 +1,16 @@
 <?php 
     session_start();
+
+    // if (isset($_SESSION['u_id'])) {
+    //     $time_stamp = $_SESSION['u_time_stamp'];
+    //     $session_length = (time() - $time_stamp) / 60;
+
+    //     if ($session_length > 5) {
+    //         session_unset();
+    //         session_destroy();
+    //     }
+    // }
+ 
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +33,7 @@
                         if (isset($_SESSION['u_id'])) {
                             echo '<li><a href="account.php">Account</a></li>';
                             echo '<li><a href="dataEntry.php">Data Entry</a></li>';
+                           // echo '<p class="time-stamp">'.number_format($session_length, 2).'</p>';
                         }
                     ?>
                 </ul>
